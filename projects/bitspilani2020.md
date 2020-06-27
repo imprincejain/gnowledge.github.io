@@ -75,8 +75,14 @@ Details of team members:
 
 # Office Automation
 
-(Paragraph Introduction)
+This project aims to automate the annual report generation for HBCSE which was previously done manually. The data is collected using a free and open source platform called KoBoToolbox. The forms on KoBoToolbox are base on XLSForm. These forms can be simply created using Excel. The XLSForm that are uploaded on KoBoToolbox are then converted to ODK Xform, which is a popular open standard that allows to author a form with complex functionality like skip logic.
 
+The data then can be exported from KoBoToolbox. The scripts made by us for report generation are written in python programming language. Our script performs 3 main functions:
+
+Automatically download the data filled by the employees from KoBoToolbox.
+Make a default template in the form of a text file that contains the column headers for each separate form. The order of these headers can either be edited during the execution of the script or can be manually edited in the text file generated.
+Generate reports in Markdown format on the basis of the template specified in the text file generated in the previous step. The report for each individual form can either be generated in tabular or list format which can be specified in the template text file.
+Through this project, reports can be generated in desired format with very less editing required from the user end which saves a lot of time.
 Details of team members:
 - Arshdeep Singh
 - Prince Ajmera
